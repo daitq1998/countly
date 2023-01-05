@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/Ubuntu-Regular/Ubuntu-Regular.eot');
+    src: url('/fonts/Ubuntu-Regular/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/Ubuntu-Regular/Ubuntu-Regular.woff2') format('woff2'),
+            url('/fonts/Ubuntu-Regular/Ubuntu-Regular.woff') format('woff'),
+            url('/fonts/Ubuntu-Regular/Ubuntu-Regular.ttf') format('truetype'),
+            url('/fonts/Ubuntu-Regular/Ubuntu-Regular.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/fonts/Ubuntu-500/Ubuntu-500.eot');
+    src: url('/fonts/Ubuntu-500/Ubuntu-500.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/Ubuntu-500/Ubuntu-500.woff2') format('woff2'),
+            url('/fonts/Ubuntu-500/Ubuntu-500.woff') format('woff'),
+            url('/fonts/Ubuntu-500/Ubuntu-500.ttf') format('truetype'),
+            url('/fonts/Ubuntu-500/Ubuntu-500.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-style: italic;
+    src: url('/fonts/Ubuntu-italic/Ubuntu-italic.eot');
+    src: url('/fonts/Ubuntu-italic/Ubuntu-italic.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/Ubuntu-italic/Ubuntu-italic.woff2') format('woff2'),
+            url('/fonts/Ubuntu-italic/Ubuntu-italic.woff') format('woff'),
+            url('/fonts/Ubuntu-italic/Ubuntu-italic.ttf') format('truetype'),
+            url('/fonts/Ubuntu-italic/Ubuntu-italic.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-style: italic;
+    src: url('/fonts/Ubuntu-500italic/Ubuntu-500italic.eot');
+    src: url('/fonts/Ubuntu-500italic/Ubuntu-500italic.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/Ubuntu-500italic/Ubuntu-500italic.woff2') format('woff2'),
+            url('/fonts/Ubuntu-500italic/Ubuntu-500italic.woff') format('woff'),
+            url('/fonts/Ubuntu-500italic/Ubuntu-500italic.ttf') format('truetype'),
+            url('/fonts/Ubuntu-500italic/Ubuntu-500italic.svg#Ubuntu') format('svg');
+}
+
+#cly-heatmap-topbar {
+    min-height: 64px;
+    background-color: #FFFFFF;
+    font-family: Ubuntu,Helvetica,sans-serif;  
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;   
+    user-select: none;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    box-sizing: content-box;
+    z-index: 1000001;
+    box-shadow: inset 0 -1px 0 0 #E7E7E7;
+    line-height: 14px;
+}
+
+#cly-heatmap-topbar .cly-heatmap-center-menu {
+    all: initial;
+    font-family: Ubuntu,Helvetica,sans-serif; 
+    line-height: 14px;
+    width: 750px; 
+    margin-left: auto; 
+    margin-right: 70px; 
+    display: flex; 
+    color: #666;
+    height: 64px;
+}
+
+#cly-heatmap-topbar .cly-heatmap-logo {
+    all: initial;
+    height:32px !important; 
+    width: 185px;
+    position:absolute; 
+    margin: 15px 20px
+}
+
+/* #cly-heatmap-topbar .cly-heatmap-block,
+#cly-heatmap-topbar .cly-heatmap-dropdown {
+    all: inherit;
+    display: inline;
+    width: 25px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    padding: 21px 0px;
+} */
+
+#cly-heatmap-topbar .cly-heatmap-block {
+    border: 1px solid #E2E4E8;
+    width: 120px;
+    height: 32px;
+    padding: 7px 12px 7px 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+    color: #333C48;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 24px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+#cly-heatmap-topbar .cly-heatmap-block:hover {
+    border-color: #81868D;
+}
+
+/* #cly-heatmap-topbar .cly-heatmap-block:hover {
+    color: #56C055;
+} */
+
+/* #cly-heatmap-topbar .cly-heatmap-dropdown.cly-heatmap-bordered {
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown.cly-heatmap-bordered:nth-child(2) {
+    border-left: 0px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7
+} */
+
+#cly-heatmap-topbar .cly-heatmap-dropdown.cly-heatmap-large {
+    /* width: 210px; */
+    margin-top: 25px;
+    margin-left: 24px;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown.cly-heatmap-active .cly-heatmap-selected {
+    vertical-align: top;
+    display: inline
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-selected {
+    font-size: 13px;
+    line-height: 16px;
+    color: #474747;
+    width: 200px;
+    height: 32px;
+    margin-top: 16px;
+    /* position: absolute; */
+    border: 1px solid #CFD6E4;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 8%);
+    border-radius: 4px;
+    padding: 7px 10px 7px 10px;
+    cursor: pointer;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-selected:hover {
+    border-color: #81868D;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-title {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    margin-right: 8px;
+    text-transform: uppercase;
+    color: #333C48;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-selected {
+    display: none
+}
+
+#cly-heatmap-topbar .cly-heatmap-block i {
+    font-size: 15px;
+    vertical-align: top;
+    margin-top: 1px;
+    margin-right: 6px;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+#cly-heatmap-topbal .cly-heatmap-block .cly-heatmap-reload {
+    border: 1px solid #E2E4E8;
+    width: 119px;
+    height: 32px;
+    padding: 7px 12px 7px 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.0485645);
+    color: #333C48;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown.cly-heatmap-large .cly-heatmap-selected:after {
+    all: initial;
+    font-family: Ionicons;
+    content: "\f3d0";
+    margin-left: 10px;
+    font-size: 10px;
+    vertical-align: top;
+    line-height: 16px;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown.cly-heatmap-large.cly-heatmap-clicked .cly-heatmap-selected:after {
+    content: "\f3d8";
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-menu {
+    all: initial;
+    font-family: Ubuntu,Helvetica,sans-serif !important;
+    line-height: 14px;
+    box-shadow: 0 3px 7px rgb(0 0 0 / 8%);
+    border: 1px solid #A7AEB8;
+    color: #474747;
+    opacity: 0;
+    cursor: default;
+    position: absolute;
+    top: 50px;
+    width: 190px;
+    margin-left: -140px;
+    background-color: #FFFFFF;
+    visibility: hidden;
+    border-radius: 4px;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown.cly-heatmap-clicked .cly-heatmap-menu {
+    opacity: 1;
+    transition: opacity .3s, visibility .3s;
+    visibility: visible
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-menu:after {
+    border: 7px solid rgba(194, 225, 245, 0);
+    border-bottom-color: #D0D0D0;
+    margin-left: -7px;
+    
+    z-index: 1
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-menu .cly-heatmap-list {
+    max-height: 350px;
+    overflow: auto
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-menu .cly-heatmap-list .cly-heatmap-item {
+    font-family: Ubuntu,Helvetica,sans-serif !important;  
+    line-height: 14px;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    padding: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #333C48;
+    border-radius: 4px;
+    margin: 8px;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-menu .cly-heatmap-list .cly-heatmap-item:last-child {
+    border-bottom: none
+}
+
+#cly-heatmap-topbar .cly-heatmap-dropdown .cly-heatmap-menu .cly-heatmap-list .cly-heatmap-item:hover {
+    background-color: #0166D6;
+    color: #fff;
+}
+
+#cly-heatmap-topbar .cly-heatmap-close {
+    text-decoration: none;
+    font-size: 22px;
+    position: absolute;
+    top: 17px;
+    right: 22px;
+    color: #666;
+}
+
+#cly-heatmap-topbar .cly-heatmap-checkbox {
+    all: initial;
+    position: absolute;
+    line-height: 14px;
+    top: 24px;
+    right: 70px;
+    color: #666;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#cly-heatmap-topbar .cly-heatmap-checkbox .cly-heatmap-label {
+    font-family: Ubuntu,Helvetica,sans-serif !important;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#cly-heatmap-topbar .cly-heatmap-checkmark {
+    all: initial;
+    all: initial;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #CBCBCB;
+    border-radius: 2px;
+    box-shadow:  inset 0px 0px 2px 0px #E7E7E7;
+}
+
+#cly-heatmap-topbar .cly-heatmap-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#cly-heatmap-topbar .cly-heatmap-checkbox input:checked ~ .cly-heatmap-checkmark:after {
+    display: block;
+    left: 5px;
+    top: 2px;
+    width: 2.5px;
+    height: 6px;
+    border: 1px solid #474747;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
